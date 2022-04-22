@@ -25,7 +25,7 @@ body {
     */
     position: fixed;
     top: 48%;
-    left: 46%;
+    left: 43%;
     /*
     transform: translate(-50%, -50%);
     */
@@ -34,23 +34,19 @@ body {
 .content .button-input-lucky {
     position: fixed;
     top: 48%;
-    left: 54%;
+    left: 51%;
 }
 
 .content .form-control {
     position: fixed;
     top: 43%;
-    left: 33%;
+    left: 30%;
 }
 
 .content #logo {
     position: fixed;
     top: 30%;
-    left: 45%;
-}
-
-.advanced-content {
-    padding: 2rem;
+    left: 40%;
 }
 
 .button-input {
@@ -65,12 +61,26 @@ body {
     width: 45rem;
 }
 
+.advanced-content {
+    padding: 5rem;
+}
 #adv-srch-title {
-    padding: 2rem;
+    margin-left: 5rem;
+    margin-top: 3rem;
+    font-size: larger;
+    /*position: relative;
+    margin-right: 20rem;
+    top: 3rem;
+    */
+}
+
+#adv_logo {
+    /*position: relative;*/
+    margin-left: 5rem;
 }
 
 #adv-srch-btn {
-    margin-top: 3rem;
+    margin-top: 0rem;
     margin-left: 70%;
     background-color: rgb(92, 156, 156);
     /*
