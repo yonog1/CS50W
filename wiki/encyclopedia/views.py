@@ -1,4 +1,5 @@
-from django.http import Http404
+from audioop import reverse
+from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import render
 import markdown
 
@@ -18,10 +19,11 @@ def content(request, entry):
         return error(request, entry)
     return render(request, "encyclopedia/content.html", {
         "entry": entry.capitalize(),
-        "entry_page":markdowner.convert(entry_page)
+        "entry_page": markdowner.convert(entry_page)
     })
+
 
 def error(request, entry):
     return render(request, "encyclopedia/error.html", {
-        "entry":entry.capitalize()
+        "entry": entry
     })
