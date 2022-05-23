@@ -1,6 +1,6 @@
-from audioop import reverse
 from django.http import Http404, HttpResponseRedirect
 from django.shortcuts import render
+
 import markdown
 
 from . import util
