@@ -1,6 +1,8 @@
-from django.http import Http404, HttpResponseRedirect
-from django.shortcuts import render
+import re
 
+from django.http import Http404, HttpResponse, HttpResponseRedirect
+from django.shortcuts import render
+from django.urls import reverse
 import markdown
 
 from . import util
@@ -28,7 +30,7 @@ def content(request, entry):
 
 def error(request, entry):
     return render(request, "encyclopedia/error.html", {
-        "entry": entry
+        "entry": entry.capitalize()
     })
 
 def search(request):
